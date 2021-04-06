@@ -3,23 +3,24 @@ import React from 'react';
 
 
 
-const Card = () => {
+const Card = (props) => {
 
     return(
         
-        <div>
-            <img alt='Robots' src = 'https://robohash.org/daje?100x100' />
+        <div className='tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5 '>
+            <img alt='Robots' src = {`https://robohash.org/${props.id}?200x200`} />
 
             <div>
-                <h2>Ema Peace</h2>
-                <p>Ema.peace@mail.com</p>
+                <h2>{props.name}</h2>
+                <p>{props.email}</p>
             </div>
 
         </div>
     );
-
+ 
 
 }
-
+ 
 export default Card;
 
+// export default because I'm exporting just one thing and, inside the index.js file I'll import and descructure {  }
