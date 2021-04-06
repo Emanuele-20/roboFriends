@@ -8,7 +8,13 @@ import 'tachyons';
 
 // Here what React Does, I'm rendering React components, written in their own files
 
-ReactDOM.render(  <Card />,  document.getElementById('root')   );
+ReactDOM.render(    
+                <div>
+                    <Card />
+                    <Card />
+                    <Card />
+                </div>
+, document.getElementById('root')   );
 
 
 
@@ -23,3 +29,4 @@ ReactDOM.render(  <Card />,  document.getElementById('root')   );
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+ 
