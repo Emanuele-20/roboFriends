@@ -4,7 +4,7 @@ import './index.css';
 import Card from './Card'
 import reportWebVitals from './reportWebVitals';
 import 'tachyons'; 
-import { robots }  from './robots'
+import { robots }  from './robots' // { } contain multiple elements and we have to import in this way
 
 
 // Here what React Does, I'm rendering React components, written in their own files
