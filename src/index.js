@@ -9,10 +9,11 @@ import reportWebVitals from './reportWebVitals';
 
 
 
-
+// Here what React Does, I'm rendering React components, written in their own files
 
 ReactDOM.render(  <Hello greeting = {'Hello React Ninja'}/>,  document.getElementById('root')   );
-ReactDOM.render(  <London addAProp = {'Trying to add a prop'}/>, document.getElementById('root')    )
+
+ReactDOM.render(  <London addAProp = {'Trying to add a prop'}/>, document.getElementById('root2')    );
 
 
 

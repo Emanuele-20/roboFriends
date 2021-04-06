@@ -1,11 +1,11 @@
 import React from 'react';
 import './Hello.css';
 
-
+// Here I'm creating components
 class Hello extends React.Component{
 
 
-    render(){
+    render(){   
 
         return (
             <div className='f2 tc'>

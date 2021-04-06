@@ -9,7 +9,7 @@ class London extends React.Component{
         return(
 
             <div className = "f3 tc">
-            <p >What you think about the climate here ?</p>
+            <p>2nd Component - What you think about the climate here ?</p>
               <p>{this.props.addAProp}</p>
             </div>
 
