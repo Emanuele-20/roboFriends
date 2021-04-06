@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
-import Hello from './Hello'
-import London from "./London"
-import 'tachyons'; 
+import Card from './Card'
 import reportWebVitals from './reportWebVitals';
-
+import 'tachyons'; 
 
 
 // Here what React Does, I'm rendering React components, written in their own files
 
-ReactDOM.render(  <Hello greeting = {'Hello React Ninja'}/>,  document.getElementById('root')   );
+ReactDOM.render(  <Card />,  document.getElementById('root')   );
 
-ReactDOM.render(  <London addAProp = {'Trying to add a prop'}/>, document.getElementById('root2')    );
+
 
 
 
