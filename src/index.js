@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import CardList from './CardList'
+import App from './App' // put here all our components, App is the parent component
 import reportWebVitals from './reportWebVitals';
-
 import 'tachyons'; 
 import { robots }  from './robots' // { } contain multiple elements so we to import with {}, exported without 'default'
 
 
 
-ReactDOM.render(    <CardList robots = {robots} /> ,  document.getElementById('root')   ); 
+ReactDOM.render(    <App /> ,  document.getElementById('root')   ); 
 
 
 // "id" , "name" and "email" are Card's properties so inside the component will be PROPS .
+// Now CardList here receive robots(11) as props so I have access now to that property inside the CardList component.
 
 
 
