@@ -5,23 +5,36 @@ import SearchBox from './SearchBox.js'
 
 
 
+class App extends React.Component {
 
-const App = () => {
+    constructor(){
 
-    return (
+        super()
+        this.state = {
+            robots: robots, 
+            searchfield: ''
+        }
+        
+    }
 
-    <div className="tc"> 
+    render(){
 
-        <h1>RoboFriends</h1>
+        return(
 
-        <SearchBox />
+            <div className="tc"> 
+        
+                <h1>RoboFriends</h1>
+        
+                <SearchBox />
+        
+                <CardList robots={robots} />
+        
+            </div>   
+    
+        )
 
-        <CardList robots={robots} />
+    }
 
-    </div>   
-
-
-    )
 
 
 }

@@ -1,14 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App' // put here all our components, App is the parent component
+import App from './App'
 import reportWebVitals from './reportWebVitals';
 import 'tachyons'; 
-//import { robots }  from './robots' // { } contain multiple elements so we to import with {}, exported without 'default'
 
 
 
 ReactDOM.render(    <App /> ,  document.getElementById('root')   ); 
+
+
+
+
+
+
+
 
 
 // "id" , "name" and "email" are Card's properties so inside the component will be PROPS .
