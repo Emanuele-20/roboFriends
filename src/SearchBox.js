@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const SearchBox = () => {
+const SearchBox = ({searchChange}) => {
 
     return(
 
@@ -15,6 +15,8 @@ const SearchBox = () => {
                 type='search' 
 
                 placeholder='search robots'
+
+                onChange={searchChange}   //is an event, every time the input changes
 
                 />
         </div>

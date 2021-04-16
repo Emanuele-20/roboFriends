@@ -11,13 +11,24 @@ class App extends React.Component {
 
         super()
         this.state = {
-            robots: robots, 
+            robots: robots, // app is allows to change robots, because is inside STATE
             searchfield: ''
         }
-        
+
+    }
+
+    onSearchChange = (event) => {
+
+        this.setState({searchfield: event.target.value}) //.target.value for receive back the real value
+
     }
 
     render(){
+
+        const filteredRobots = this.state.robots.filter(robot => {
+            return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        })
+
 
         return(
 
@@ -25,9 +36,9 @@ class App extends React.Component {
         
                 <h1>RoboFriends</h1>
         
-                <SearchBox />
+                <SearchBox searchChange={this.onSearchChange}/>
         
-                <CardList robots={robots} />
+                <CardList robots={filteredRobots} />
         
             </div>   
     
