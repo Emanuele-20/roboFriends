@@ -19,6 +19,7 @@ const SearchBox = ({searchChange}) => {
                 onChange={searchChange}   //is an event, every time the input changes
 
                 />
+                
         </div>
 
     )
