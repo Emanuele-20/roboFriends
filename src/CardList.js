@@ -1,7 +1,5 @@
 import React from 'react';
-//import { robots }  from './robots'
 import Card from './Card'
-
 
 const CardList = ({ robots }) => {
     
@@ -9,7 +7,7 @@ const CardList = ({ robots }) => {
 
         <div>
             {
-                robots.map((user, i ) => {     // use map method to return multiple components
+                robots.map((user, i ) => {     // use map method to return multiple Card components
                     return(
                         <Card 
                             key= {robots[i].id} //Special case, check below

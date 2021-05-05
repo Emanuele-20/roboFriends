@@ -1,15 +1,14 @@
 import React from 'react';
-// First Component with function and no with Class
 
 
 
-const Card = ({name, email, id}) => {  //within the parameter we can do destructuring, ES6
+const Card = ({name, email, id}) => {  //inside the parameter act destructuring, ES6
 
 
     return(
         
         <div className='tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5 '>
-            <img alt='robots' src = {`https://robohash.org/${id}?200x200`} />
+            <img alt='robots' src = {`https://robohash.org/${id}?100x100`} />
 
             <div>
                 <h2>{name}</h2>
