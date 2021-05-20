@@ -48,7 +48,7 @@ class App extends React.Component {
         <h1>Loading......</h1> : //in case the loading of the robots will take different seconds
             (
                 <div className="tc"> 
-                    <h1 className='f1 '>RoboFriends</h1>
+                    <h1 className='f1'>RoboFriends</h1>
                     <SearchBox searchChange={this.onSearchChange}/>
                     {/* here I want that everytime I write something inside the SearchBox
                     something happen, like run the onSearchChange function, 2nd I have to pass that function 
