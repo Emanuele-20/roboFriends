@@ -30,16 +30,13 @@ class App extends React.Component {
     onSearchChange = (event) => { 
         this.setState({searchfield: event.target.value}) 
     }
-
     //every time that input change (from searchBox we get an EVENT) 
-    //event.target.value for receive back the real value of my input
-
-    //Every time we create our own method, use arrow function, 
     //because we want "THIS" to be linked to the App class and not to the <input> in SearchBox.js
+    //Every time we create our own method, use arrow function, 
 
 
     render(){
-    const { robots, searchfield } = this.state //a bit of refactor with destructuring
+    const { robots, searchfield } = this.state //refactoring  with destructuring
     const filteredRobots = robots.filter(robot => {
         return robot.name.toLowerCase().includes(searchfield.toLowerCase())
     })
