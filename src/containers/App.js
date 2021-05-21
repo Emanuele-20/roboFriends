@@ -2,6 +2,7 @@ import React from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundry from "../components/ErrorBoundry"
 import './App.css'
 
 
@@ -51,9 +52,12 @@ class App extends React.Component {
                     something happen, like run the onSearchChange function, 2nd I have to pass that function 
                     inside the SearchBox component as props, 3rd I have to pass the onchange event into the 
                     SearchBox component (onChange={searchChange})*/}
+                    
                     <Scroll>
-                        <CardList robots={filteredRobots} />
-                    {/* instead pass all the robots, we pass just the filtered one inside the CardList component */}
+                        <ErrorBoundry>
+                            <CardList robots={filteredRobots} />
+                            {/* instead pass all the robots, we pass just the filtered one inside the CardList component */}
+                        </ErrorBoundry>
                     </Scroll>
                 </div>   
 
